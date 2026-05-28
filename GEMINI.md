@@ -28,11 +28,13 @@ The project architecture has been successfully scaffolded and the core Minimum V
 - [x] Implementation of MVP API logic in `api/v1/exams.py` and `api/v1/ai_evaluation.py`.
 - [x] Conversion of `frontend/app/exam/[id]/page.tsx` to a fully interactive Client Component with state management and API integration.
 - [x] Fixed Next.js frontend compilation issue related to Tailwind CSS dependencies (`autoprefixer`, `postcss`).
+- [x] **Database Integration:** Defined SQLAlchemy models (`Exam`, `Submission`) in `backend/db/models.py`.
+- [x] **Database Migrations:** Initialized Alembic and created the first migration script for the schema.
+- [x] **Backend Logic Upgrade:** Refactored `api/v1/exams.py` to fetch data from PostgreSQL.
+- [x] **Data Seeding:** Created `backend/seed.py` to populate the database with initial exam content.
 
 ## Outstanding Tasks
-- **Database Migrations:** Initialize Alembic (`alembic init`), define actual SQLAlchemy models in a `models/` directory, and generate the first migration schema.
-- **Backend Logic Upgrade:** Replace mock data in API endpoints with actual SQLAlchemy queries against the PostgreSQL database.
-- **AI Integration:** Implement real API calls to OpenAI or Google Generative AI within `api/v1/ai_evaluation.py`, utilizing system prompts tailored for TestDaF grading.
+- **AI Integration:** Implement real API calls to OpenAI or Google Generative AI within `api/v1/ai_evaluation.py`, utilizing system prompts tailored for TestDaF grading. Update the endpoint to save submissions to the database.
 - **Frontend Enhancements:** Add the audio-recording UI/logic for the speaking sections of the exam.
 - **Authentication:** Implement JWT-based user authentication and protect the API routes.
 

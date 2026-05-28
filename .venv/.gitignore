@@ -1,0 +1,31 @@
+# === Frontend/Node Dependencies ===
+node_modules/
+.next/
+out/
+build/
+.pnpm-store/
+
+# === Python/Backend Dependencies ===
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+env/
+venv/
+ENV/
+
+# === Database & Docker Cache ===
+.postgres_data/
+.redis_data/
+
+# === Environment Variables (Sensitive Info) ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === Operating System Junk ===
+.DS_Store
+Thumbs.db
