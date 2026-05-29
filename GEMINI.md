@@ -32,6 +32,7 @@ The project architecture has been successfully scaffolded and the core Minimum V
 - [x] **Database Migrations:** Initialized Alembic and created the first migration script for the schema.
 - [x] **Backend Logic Upgrade:** Refactored `api/v1/exams.py` to fetch data from PostgreSQL.
 - [x] **Data Seeding:** Created `backend/seed.py` to populate the database with initial exam content.
+- [x] **Infrastructure Fix:** Resolved `EACCES` permission denied error in frontend container by adding an anonymous volume for `.next`.
 
 ## Outstanding Tasks
 - **AI Integration:** Implement real API calls to OpenAI or Google Generative AI within `api/v1/ai_evaluation.py`, utilizing system prompts tailored for TestDaF grading. Update the endpoint to save submissions to the database.
